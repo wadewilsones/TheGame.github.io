@@ -11,3 +11,9 @@ let a8 = 5+'3';
 let a9 = '5'-3;
 let a10 = 75+'кг' 
 console.log (a6, a7, a8, a9, a10)
+
+// triangle S
+let height = 23;
+let width = 10;
+let S = (width*height)/2
+console.log (S)
