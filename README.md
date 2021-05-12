@@ -1,2 +1,2 @@
-# TypeScrit_sandbox
+# JScrit_sandbox
 Code testing
