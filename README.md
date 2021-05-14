@@ -1,2 +1,2 @@
-# JScrit_sandbox
+# JScript_sandbox
 Code testing
