@@ -3,16 +3,12 @@
 let paper = document.getElementById('paper');
 let rock = document.getElementById('rock');
 let scissors = document.getElementById('scissors');
-
 let subbutton = document.getElementById('submitB');
 
-//let choise = document.getElementById('choise'); input text remove
-
-//Click  
 
 subbutton.addEventListener ('click', function Start(){
 
-//Declare choice for computer.
+//Create random choise option for the computer.
 
     let compChoice =  Math.floor(Math.random() * 3)
 
@@ -29,11 +25,12 @@ subbutton.addEventListener ('click', function Start(){
     console.log (`Computer choose: ${compChoice}`);
     xMan();
     let getUserChoice = xMan;
-    console.log ("Result is: " + user);
+    compare(compChoice, user)
+    console.log("Result is " + compare(compChoice, user))
     })
 
 
-// Get user choise
+//Create function for human choise.
 
     function xMan() {
     
@@ -49,10 +46,7 @@ subbutton.addEventListener ('click', function Start(){
    
 }
 
-
-
-
-// Compare user and computer choise
+// Compare function for  user and computer choise
 
 function compare(computer, human) {
 
@@ -61,9 +55,9 @@ function compare(computer, human) {
         return "It's a tie"
     }
 
-    if (computer === "paper")
+    if (computer === "rock")
         {
-            if(human === "rock")
+            if(human === "paper")
             {
             return "user won"}
             else {
