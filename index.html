@@ -5,14 +5,36 @@
         <link rel ="stylesheet" href="style.css" type = "text/css"/>
     </head>
     <body>
-        <h1>Rock, paper and scissors</h1>
-        
-        <input type="radio" name = "game" id="paper" value="Paper"><label>Paper</label>
-        <input type="radio" name = "game" id="rock" value="Rock"><label>Rock</label>
-        <input type="radio" name = "game" id="scissors" value="Scissors"><label>Scissors</label>
-        <input type="submit" name="submit" id="submitB">
 
+        <section>
+            <h1 id = "greeting">Hello there!</h1>
+            <h6 id = "nameCheck">Before we’ll start play, can you tell me your name, please?</h6>
+            <div class = "name_confirmation_section">
+                <input type="text" placeholder="Type your name here..." id = "name_input">
+                <input type="submit" value="Submit" id="name_sbt">
+            </div>
 
+            <div class = "secondScreen">
+                <input type="radio" name = "game" id="paper" value="Paper"><label>Paper</label>
+                <input type="radio" name = "game" id="rock" value="Rock"><label>Rock</label>
+                <input type="radio" name = "game" id="scissors" value="Scissors"><label>Scissors</label>
+                <input type="submit" name="submit" id="submitB">
+            </div>
+            <div id = "results"></div>
+        </section>
+
+        <footer>
+            <div id ="footer_media">
+                <p>uladaharanina@gmail.com</p>
+                <p>uladaharanina</p>
+            </div>
+            <div id ="git">
+                <p>Github</p>
+                <p>@wadewilso</p>
+            </div>
+            <p>Rock, Scissors and Paper game</p>
+            
+        </footer>
         <script src="rockGame.js"></script>
     </body>
 </html>
