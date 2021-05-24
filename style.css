@@ -4,16 +4,45 @@ body {
     min-height: 90vh;
 }
 
+
 /*Headers*/
+.console_pic {
+    padding-top:20%;
+    margin-bottom: 0px;
+    animation: console 4s infinite;
+    display: block;
+    margin:auto;
+    animation-timing-function: linear;
+}
+
+@keyframes  console {
+    0%{transform:translateY(0px)}
+    40% {transform:translateY(3px)}
+    80% {transform:translateY(-3px)}
+    100% {transform:translateY(0px)}
+}
+.console_pic_remove {display:none}
+
+
+
+
+
 
 h1{
     text-align: center;
     font-size: 48px;
     line-height: 1.8;
     margin-bottom: 0;
+    margin-top: 0px;
     font-weight:400;
-    padding-top: 20%;
+
 }
+
+h1:hover {color:#FF9811;
+transition: 0.6s linear;
+transform: scale(1.1);
+}
+
 
 h6{  
     text-align: center;
@@ -23,7 +52,9 @@ h6{
     font-weight:400;
 }
 
+
 /*Content*/
+
 
 section {
     
@@ -33,6 +64,10 @@ section {
     border: none;
 }
 
+
+/*First block (name input)*/
+
+
 .name_confirmation_section{
 
     display: flex;
@@ -40,6 +75,14 @@ section {
     justify-content:center;
 
 }
+
+
+.name_confirmation_section_remove{
+    
+    display: none;
+
+}
+
 
 #name_input {
 
@@ -52,6 +95,7 @@ section {
 
 }
 
+
 #name_sbt {
     background-color: #2BBBD8;
     color:white;
@@ -60,7 +104,79 @@ section {
     height: 42px;
     border-radius: 21px;
     border: none;
+    cursor: pointer;
 }
+#name_sbt:hover {
+    background-color:#FF9811;
+transition: 0.2s linear;}
+
+/*Game block*/
+
+
+.secondScreen {
+
+    display:none
+
+}
+
+
+.secondScreenDisplay {
+    display:block;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+
+/*Rules for game submit button*/
+
+.radio-btn {
+
+    color:#2BBBD8;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+
+}
+
+img { 
+
+    display: block;
+    margin:auto;
+    margin-bottom: 20px;
+    
+}
+
+.rock {margin-left: 10%;}
+
+
+.scissors {margin-left: 10%;}
+
+
+label {
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+#submitB {
+
+    width: 179px;
+    height: 63px;
+    background-color:#FF9811;
+    color:white;
+    border-radius: 40px;
+    border:none;
+    font-size: 26px;
+    margin-top: 5%;
+
+}
+
+
 
 /*Footer*/
 
