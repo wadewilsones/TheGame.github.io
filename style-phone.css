@@ -105,6 +105,9 @@ section {
 /*Game block*/
 
 
+/*Game block*/
+
+
 .secondScreen {
 
     display:none
@@ -116,6 +119,110 @@ section {
     display:block;
     text-align: center;
     margin-top: 5%;
+    
+}
+
+
+/*Rules for game submit button*/
+
+.radio-btn {
+
+    color:#2BBBD8;
+    font-size: 36px;
+    display: block;
+
+}
+
+img { 
+
+    display: block;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    width:200px;
+    height: 200px;
+    
+}
+
+
+label {
+
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size:7vw;
+
+}
+#paper {
+
+    width:40px;
+    height: 40px;
+
+    }
+
+#rock {
+
+        width:40px;
+        height: 40px;
+        
+        }
+
+#scissors {
+
+     width:40px;
+    height: 40px;
+            
+}
+
+#submitB {
+
+    width: 390px;
+    height: 100px;
+    background-color:#FF9811;
+    color:white;
+    border-radius: 80px;
+    border:none;
+    font-size: 46px;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 5%;
+
+}
+
+
+.buttons-for-back {
+    display: flex;
+align-items: center;
+justify-content: center;
+padding-top:10%;
+margin-bottom: 5%;
+}
+
+.but {
+
+    border:none; 
+    background-color:#FF9811; 
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    margin-left:30px; 
+
+}
+
+#arrow-back {
+    padding: 5px; 
+    cursor: pointer;
+    width:40px;
+    height: 40px;}
+
+/*Result*/
+
+
+.result-header {
+
+    color:black; 
+    font-size:20px; 
+    font-weight:500
     
 }
 
