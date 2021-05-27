@@ -13,7 +13,7 @@ let sectionTwo = document.querySelector(".secondScreen");
 
 sub_btn.addEventListener('click', function(event){
     event.preventDefault()
-    if (name.value !="") 
+    if (name.value !=""  && name.value.length > 3) 
     {
     greeting.innerHTML = "Alright, let's play " + name.value + "!"; 
     greeting.style.cssText = "padding-top:20%" 
