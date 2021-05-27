@@ -104,10 +104,6 @@ section {
 
 /*Game block*/
 
-
-/*Game block*/
-
-
 .secondScreen {
 
     display:none
@@ -178,7 +174,6 @@ label {
     width: 390px;
     height: 100px;
     background-color:#FF9811;
-    color:white;
     border-radius: 80px;
     border:none;
     font-size: 46px;
