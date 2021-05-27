@@ -202,12 +202,17 @@ label {
 }
 
 
-/*Results*/
-
 .buttons-for-back {
     display: flex;
 align-items: center;
 justify-content: center;
+}
+
+#arrow-back {
+    padding-top:15px; 
+    cursor: pointer;
+    width: 29px;
+    height: 27px;
 }
 
 
@@ -221,6 +226,18 @@ justify-content: center;
     margin-top: 5%;
 
 }
+
+/*Results*/
+
+
+.result-header {
+
+    color:black; 
+    font-size:14px; 
+    font-weight:500
+    
+}
+
 
 .but:hover {
     border:none; 
