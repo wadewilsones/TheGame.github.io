@@ -1,0 +1,25 @@
+@media (max-width: 1439px) {
+    
+    body{
+    width:90%;
+    min-height: 100vh;
+    margin:0;
+    border: 2px solid red;
+    margin:auto;
+    font-family: Roboto;
+
+}
+
+h1 {
+    font-size:48px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*End of media*/
+}
