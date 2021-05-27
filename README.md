@@ -4,4 +4,4 @@ Simple JS code which is providing opportunity to play the "Rock, paper, scissors
 ### Include 4 files
 index.html, style.css, rockGame.js + media folder
 
-Image description
+Image description https://github.com/wadewilsones/TheGame.github.io/blob/main/pics.jpg
