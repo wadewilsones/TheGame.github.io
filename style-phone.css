@@ -1,7 +1,7 @@
-@media (max-width: 1439px) {
+@media (max-width: 1139px) {
     
     body{
-    width:90%;
+    width:100%;
     min-height: 100vh;
     margin:0;
     border: 2px solid red;
@@ -26,11 +26,20 @@ h6 {
 
 }
 
+section {
+    
+    width:90%;
+    min-height: calc(100vh - 120px);
+    margin: auto;
+    border: none;
+}
+
+
 
 /*Pictires*/
 
 .console_pic {
-    padding-top:40%;
+    padding-top:40vw;
     margin-bottom: 0px;
     animation: console 4s infinite;
     display: block;
@@ -56,6 +65,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content:center;
+    padding-bottom: 15%;
 
 }
 
@@ -90,6 +100,51 @@ h6 {
     border: none;
     cursor: pointer;
 }
+
+
+/*Game block*/
+
+
+.secondScreen {
+
+    display:none
+
+}
+
+
+.secondScreenDisplay {
+    display:block;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+
+
+/*Footer*/
+
+footer {
+    width:100%;
+    background-color: #2BBBD8;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    font-weight: 400;
+    line-height: 0.5;
+    font-size:2.5vw;
+    
+}
+
+#footer_media {display: none;}
+
+#git p {
+    text-align: left;
+    font-weight: 300;
+line-height: 0.5;
+font-size:2vw}
+
 
 /*End of media*/
 }
