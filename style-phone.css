@@ -91,16 +91,5 @@ h6 {
     cursor: pointer;
 }
 
-
-#name_sbt:hover {
-    background-color:#FF9811;
-transition: 0.2s linear;
-cursor: pointer;}
-
-
-
-
-
-
 /*End of media*/
 }
