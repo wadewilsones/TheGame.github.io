@@ -17,15 +17,11 @@ body {
 
 @keyframes  console {
     0%{transform:translateY(0px)}
-    40% {transform:translateY(3px)}
-    80% {transform:translateY(-3px)}
+    40% {transform:translateY(5px) translateX(0.5px)}
+    80% {transform:translateY(-5px)translateX(0.5px)}
     100% {transform:translateY(0px)}
 }
 .console_pic_remove {display:none}
-
-
-
-
 
 
 h1{
@@ -43,6 +39,10 @@ transition: 0.6s linear;
 transform: scale(1.1);
 }
 
+h1:active {color:#2BBBD8;
+    transition: 0.6s linear;
+    transform: scale(1.1);
+    }
 
 h6{  
     text-align: center;
@@ -51,6 +51,9 @@ h6{
     margin-top: 0;
     font-weight:400;
 }
+
+.color-for-result-text {color: #FF9811;}
+
 
 
 /*Content*/
@@ -106,9 +109,12 @@ section {
     border: none;
     cursor: pointer;
 }
+
+
 #name_sbt:hover {
     background-color:#FF9811;
-transition: 0.2s linear;}
+transition: 0.2s linear;
+cursor: pointer;}
 
 /*Game block*/
 
@@ -173,11 +179,54 @@ label {
     border:none;
     font-size: 26px;
     margin-top: 5%;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#submitB:hover {
+
+    width: 179px;
+    height: 63px;
+    background-color:#2BBBD8;
+    color:white;
+    border-radius: 40px;
+    border:none;
+    font-size: 26px;
+    margin-top: 5%;
+    cursor: pointer;
 
 }
 
 
+/*Results*/
 
+.buttons-for-back {
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.but {
+
+    border:none; 
+    background-color:#FF9811; 
+    width:63px;height:63px;
+    border-radius:100%;
+    margin-left:30px; 
+    margin-top: 5%;
+
+}
+
+.but:hover {
+    border:none; 
+    background-color:#2BBBD8; 
+    width:63px;height:63px;
+    border-radius:100%;
+    margin-left:30px; 
+    margin-top: 5%;
+}
 /*Footer*/
 
 footer {
