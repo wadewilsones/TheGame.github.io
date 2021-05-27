@@ -12,10 +12,12 @@ let sectionTwo = document.querySelector(".secondScreen");
 
 
 sub_btn.addEventListener('click', function(event){
-    event.preventDefault()
-    if (name.value !=""  && name.value.length > 3) 
+    event.preventDefault();
+    //Name validation 
+    if (name.value !="" && name.value.length > 3) 
     {
-    greeting.innerHTML = "Alright, let's play " + name.value + "!"; 
+
+    greeting.innerHTML = "Let's play " + "<span style = 'color:#FF9811'>" + name.value + "<span>" + "!"; 
     greeting.style.cssText = "padding-top:20%" 
     greeting.style.pointerEvents = "none"; // Removed hover pseudoclass
     nameCheck.innerHTML = "Please, choose one of the following:";
@@ -68,8 +70,16 @@ subbutton.addEventListener ('click', function Start(){
     header.style.cssText = "display:none";
     nameCheck.style.cssText = "display:none";    
     results.innerHTML = compare(compChoice, user);
-    results.style.cssText = "font-size:64px; text-align:center; padding-top:20%; padding-bottom:2%";    
-    })
+    results.style.cssText = "font-size:64px; text-align:center; padding-top:20%; line-height:1";
+
+   //Create a back-button  
+
+    let backBtn = document.createElement('button');
+    backBtn.innerHTML = "<img src = 'media/back.png' width = 30px height = 26px style = 'padding-top:15px; cursor: pointer;'>"
+    backBtn.setAttribute('class', 'but')
+    let buttonContainer = document.querySelector('.buttons-for-back');
+    buttonContainer.appendChild(backBtn);
+    
 
 
 //Create function for human choise.
@@ -95,35 +105,45 @@ function compare(computer, human) {
     if (computer === human) 
     {    
         let tie = "tie!"
-        return "It's a " + tie
+        return "It's a " + "<span style = 'color:#FF9811'>" + "tie" + "<span/>" + "!"
+        + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"
     }
 
     if (computer === "rock")
         {
             if(human === "paper")
             {
-            return "Aww, you won!"}
+            return "Aww, " + "<span style = 'color:#FF9811'>" + "you won" + "<span/>" +  "!"
+            + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
+
             else {
-            return "Hooray, I won!"}
-    }
+            return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+            + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}
+        }
     if (computer === "paper")
         {
             if(human === "scissors")
             {
-                return "Aww, you won!"}
+                return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
+                + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
+               
             else {
-                return "Hooray, I won!"}
+                return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+                + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}
     }
     if (computer === "scissors") {
 
             if (human === "rock"){
-                return "Aww, you won!"}
+                return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
+                + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
             else {
-                return "Hooray, I won!"}
+                return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+                + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}}
+        
+            }          })
 
-    }
 
-}
+
 
 
 
