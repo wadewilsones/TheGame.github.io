@@ -11,10 +11,91 @@
 }
 
 h1 {
-    font-size:48px;
+    font-size:12vw;
     text-align: center;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    margin: 2%;
 }
 
+h6 {
+
+    font-size:1.9vw;
+    text-align: center;
+    margin-top:0px;
+
+}
+
+
+/*Pictires*/
+
+.console_pic {
+    padding-top:40%;
+    margin-bottom: 0px;
+    animation: console 4s infinite;
+    display: block;
+    margin:auto;
+    animation-timing-function: linear;
+    width:200px;
+    height:200px;
+}
+
+@keyframes  console {
+    0%{transform:translateY(0px)}
+    40% {transform:translateY(5px) translateX(0.5px)}
+    80% {transform:translateY(-5px)translateX(0.5px)}
+    100% {transform:translateY(0px)}
+}
+.console_pic_remove {display:none}
+
+/*Name block*/
+
+
+.name_confirmation_section{
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+
+.name_confirmation_section_remove{
+    
+    display: none;
+
+}
+
+
+#name_input {
+
+    width:296px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 20px;
+    margin-right: 3%;
+    font-size: 20px;
+
+}
+
+
+#name_sbt {
+    background-color: #2BBBD8;
+    color:white;
+    font-size: 4vw;
+    width:224px;
+    height: 72px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#name_sbt:hover {
+    background-color:#FF9811;
+transition: 0.2s linear;
+cursor: pointer;}
 
 
 
