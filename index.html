@@ -6,21 +6,36 @@
     </head>
     <body>
 
-        <section>
+        <section >
+            <img src="media/console.png" width = "100" height="100" class="console_pic">
             <h1 id = "greeting">Hello there!</h1>
             <h6 id = "nameCheck">Before we’ll start play, can you tell me your name, please?</h6>
             <div class = "name_confirmation_section">
                 <input type="text" placeholder="Type your name here..." id = "name_input">
                 <input type="submit" value="Submit" id="name_sbt">
             </div>
-
-            <div class = "secondScreen">
-                <input type="radio" name = "game" id="paper" value="Paper"><label>Paper</label>
-                <input type="radio" name = "game" id="rock" value="Rock"><label>Rock</label>
-                <input type="radio" name = "game" id="scissors" value="Scissors"><label>Scissors</label>
-                <input type="submit" name="submit" id="submitB">
-            </div>
             <div id = "results"></div>
+            <div class = "secondScreen">
+                <div class ="radio-btn">
+                    <div class ="paper">
+                        <img src="media/notes.png" width = "100" height="100">
+                        <input type="radio" name = "game" id="paper" value="Paper"><label>Paper</label>
+                    </div>
+                    <div class ="rock">
+                        <img src="media/landslide.png" width = "100" height="100">
+                        <input type="radio" name = "game" id="rock" value="Rock"><label>Rock</label>
+                    </div>
+                    <div class ="scissors">
+                        <img src="media/scissors.png" width = "100" height="100">
+                        <input type="radio" name = "game" id="scissors" value="Scissors"><label>Scissors</label>
+                    </div>
+                </div>
+                <div class = "buttons-for-back">
+                    <input type="submit" name="submit" value = "Submit" id="submitB">
+                </div>    
+                
+            </div>
+           
         </section>
 
         <footer>
@@ -32,7 +47,7 @@
                 <p>Github</p>
                 <p>@wadewilso</p>
             </div>
-            <p>Rock, Scissors and Paper game</p>
+            <p>Rock, Scissors and Paper game &copy; 2021</p>
             
         </footer>
         <script src="rockGame.js"></script>
