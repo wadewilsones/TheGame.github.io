@@ -1,6 +1,6 @@
 @import "style-phone.css";
 
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
 
 body {
     margin:0%;
@@ -55,10 +55,6 @@ h6{
     margin-top: 0;
     font-weight:400;
 }
-
-.color-for-result-text {color: #FF9811;}
-
-
 
 /*Content*/
 
@@ -119,6 +115,9 @@ section {
     background-color:#FF9811;
 transition: 0.2s linear;
 cursor: pointer;}
+
+
+
 
 /*Game block*/
 
