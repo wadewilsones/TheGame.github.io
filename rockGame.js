@@ -97,7 +97,7 @@ function compare(computer, human) {
     {    
         let tie = "tie!"
         return "It's a " + "<span style = 'color:#FF9811'>" + "tie" + "<span/>" + "!"
-        + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"
+        + "<br>" + "<span class = 'result-header'>" + "Let's try again!" + "</span>"
     }
 
     if (computer === "rock")
@@ -105,31 +105,31 @@ function compare(computer, human) {
             if(human === "paper")
             {
             return "Aww, " + "<span style = 'color:#FF9811'>" + "you won" + "<span/>" +  "!"
-            + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
+            + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
 
             else {
             return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
-            + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}
+            + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}
         }
     if (computer === "paper")
         {
             if(human === "scissors")
             {
                 return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
-                + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
+                + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
                
             else {
                 return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
-                + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}
+                + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}
     }
     if (computer === "scissors") {
 
             if (human === "rock"){
                 return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
-                + "<br>" + "<span style = 'color:black; font-size:14px; font-weight:500'>" + "Let's try again!"}
+                + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
             else {
                 return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
-                + "<br>" + "<span style = 'color:black; font-size:14px;font-weight:500''>" + "Don’t worry. We can try again!"}}
+                + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}}
         
             }          })
 
@@ -137,7 +137,7 @@ function compare(computer, human) {
             //Create a back-button  
 
             let backBtn = document.createElement('button');
-            backBtn.innerHTML = "<img src = 'media/back.png' width = 30px height = 26px style = 'padding-top:15px; cursor: pointer;'>"
+            backBtn.innerHTML = "<img src = 'media/back.png' id ='arrow-back'>"
             backBtn.setAttribute('class', 'but');
             let buttonContainer = document.querySelector('.buttons-for-back');
             buttonContainer.appendChild(backBtn);
