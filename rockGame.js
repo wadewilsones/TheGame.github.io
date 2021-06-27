@@ -104,31 +104,31 @@ function compare(computer, human) {
         {
             if(human === "paper")
             {
-            return "Aww, " + "<span style = 'color:#FF9811'>" + "you won" + "<span/>" +  "!"
+            return "Hooray, " + "<span style = 'color:#FF9811'>" + "you won" + "<span/>" +  "!"
             + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
 
             else {
-            return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+            return "Aww, " + "<span style = 'color:#FF9811'>" + "you lose" + "<span/>" + "!"
             + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}
         }
     if (computer === "paper")
         {
             if(human === "scissors")
             {
-                return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
+                return "Hooray, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
                 + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
                
             else {
-                return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+                return "Aww, " + "<span style = 'color:#FF9811'>" + "you lose" + "<span/>" + "!"
                 + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}
     }
     if (computer === "scissors") {
 
             if (human === "rock"){
-                return "Aww, " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
+                return "Hooray " + "<span style = color:#FF9811>" + "you won" + "<span/>" + "!"
                 + "<br>" + "<span class = 'result-header'>" + "Let's try again!"}
             else {
-                return "Hooray, " + "<span style = 'color:#FF9811'>" + "I won" + "<span/>" + "!"
+                return "Aww, " + "<span style = 'color:#FF9811'>" + "you lose" + "<span/>" + "!"
                 + "<br>" + "<span class = 'result-header'>" + "Don’t worry. We can try again!"}}
         
             }          })
